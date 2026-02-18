@@ -344,17 +344,17 @@ details div {
 
 /* --- FOOTER --- */
 .footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    background: #0a0a0a;
+    border-top: 1px solid var(--border-subtle);
+    background: #ffffff;
     padding: var(--space-lg) 0;
-    color: #9CA3AF;
+    color: var(--color-text-body);
 }
 
 .footer-col h4 {
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #fff;
+    color: var(--color-text-main);
     margin-bottom: 1.5rem;
 }
 
@@ -367,7 +367,7 @@ details div {
 }
 
 .footer-col a {
-    color: #9CA3AF;
+    color: var(--color-text-body);
     font-size: 0.95rem;
 }
 
@@ -714,6 +714,11 @@ details div {
     color: #fff;
 }
 
+.section-light {
+    background: #ffffff;
+    color: var(--color-text-main);
+}
+
 /* --- DARK CARD --- */
 .card-dark {
     background: rgba(255, 255, 255, 0.04);
@@ -725,4 +730,19 @@ details div {
 .card-dark:hover {
     background: rgba(255, 255, 255, 0.08);
     border-color: rgba(249, 82, 40, 0.3);
+}
+
+/* --- LIGHT CARD --- */
+.card-light {
+    background: #ffffff;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s var(--ease-smooth);
+}
+
+.card-light:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    border-color: var(--border-focus);
 }
