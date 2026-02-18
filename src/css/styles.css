@@ -714,6 +714,17 @@ details div {
     color: #fff;
 }
 
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4 {
+    color: #fff;
+}
+
+.section-dark .text-gradient {
+    background: linear-gradient(135deg, #FFFFFF 0%, #D1D5DB 100%);
+}
+
 .section-light {
     background: #ffffff;
     color: var(--color-text-main);
