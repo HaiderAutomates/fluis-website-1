@@ -1,0 +1,397 @@
+/* ============================================ */
+/* FLUIS.ai - FOUNDER EDITION STYLES           */
+/* Strategy: Invisible Tech, Luxury SaaS       */
+/* ============================================ */
+
+/* --- RESET & BASE --- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    background-color: var(--color-bg-deep);
+}
+
+body {
+    font-family: var(--font-ui);
+    color: var(--color-text-body);
+    background-color: var(--color-bg-deep);
+    line-height: 1.7;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- TYPOGRAPHY --- */
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-display);
+    color: var(--color-text-main);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    /* Tight tracking for modern feel */
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: var(--h1-size);
+    font-weight: 800;
+}
+
+h2 {
+    font-size: var(--h2-size);
+}
+
+h3 {
+    font-size: var(--h3-size);
+}
+
+p {
+    max-width: 65ch;
+}
+
+/* Gradient Text Effect */
+.text-gradient {
+    background: linear-gradient(135deg, #fff 0%, var(--color-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gradient-gold {
+    background: linear-gradient(135deg, #FDE68A 0%, #FAB005 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* --- UTILITIES --- */
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--space-sm);
+}
+
+.section {
+    padding: var(--space-xl) 0;
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* --- BACKGROUND ACCENTS (Aurora) --- */
+.aurora-bg {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, var(--color-primary-glow) 0%, rgba(255, 255, 255, 0) 70%);
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0.5;
+    pointer-events: none;
+    filter: blur(80px);
+}
+
+.aurora-bg-alt {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(132, 204, 22, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    pointer-events: none;
+    filter: blur(100px);
+}
+
+/* --- BUTTONS (High Conversion) --- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 16px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--radius-pill);
+    transition: all 0.3s var(--ease-smooth);
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: #fff;
+    /* White text on Orange button */
+    box-shadow: 0 4px 12px rgba(249, 82, 40, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(249, 82, 40, 0.5);
+    background: var(--color-primary-deep);
+}
+
+.btn-secondary {
+    background: #fff;
+    color: var(--color-text-main);
+    border-color: var(--border-subtle);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.btn-secondary:hover {
+    background: var(--color-bg-surface);
+    border-color: var(--color-text-mute);
+}
+
+.btn-glow {
+    background: var(--color-primary);
+    color: white;
+    box-shadow: 0 0 30px var(--color-primary-glow);
+}
+
+.btn-glow:hover {
+    background: var(--color-primary-deep);
+    box-shadow: 0 0 50px var(--color-primary-glow);
+    transform: translateY(-2px);
+}
+
+/* --- CARDS (Glassmorphism v2) --- */
+.card-glass {
+    background: rgba(255, 255, 255, 0.6);
+    /* Very sheer */
+    border: 1px solid var(--border-subtle);
+    backdrop-filter: blur(var(--glass-blur));
+    border-radius: var(--radius-lg);
+    padding: var(--space-md);
+    transition: all 0.4s var(--ease-smooth);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+}
+
+.card-glass:hover {
+    border-color: var(--border-focus);
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-glass::before {
+    display: none;
+    /* Remove hover gradient for cleaner look */
+}
+
+/* --- HEADER --- */
+.header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.85);
+    /* White Header */
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav a {
+    color: var(--color-text-body);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: var(--color-text-main);
+}
+
+/* --- HERO --- */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 6px 16px;
+    border-radius: var(--radius-pill);
+    background: rgba(132, 204, 22, 0.1);
+    border: 1px solid rgba(132, 204, 22, 0.3);
+    color: #4D7C0F;
+    /* Darker lime for text legibility on white */
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.stat-pill {
+    padding: 0.25rem 0.75rem;
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--color-success);
+    border-radius: var(--radius-pill);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* --- GRID LAYOUTS --- */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.bento-span-2 {
+    grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-span-2 {
+        grid-column: auto;
+    }
+}
+
+/* --- FAQ --- */
+details {
+    background: var(--color-bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+details[open] {
+    border-color: var(--border-focus);
+}
+
+summary {
+    padding: 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color-text-main);
+    list-style: none;
+    /* Hide toggle */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    transition: transform 0.3s;
+}
+
+details[open] summary::after {
+    transform: rotate(45deg);
+}
+
+details div {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    color: var(--color-text-body);
+    border-top: 1px solid var(--border-subtle);
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+/* --- FOOTER --- */
+.footer {
+    border-top: 1px solid var(--border-subtle);
+    background: var(--color-bg-surface);
+    padding: var(--space-lg) 0;
+}
+
+.footer-col h4 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-main);
+    margin-bottom: 1.5rem;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-col a {
+    color: var(--color-text-body);
+    font-size: 0.95rem;
+}
+
+.footer-col a:hover {
+    color: var(--color-primary);
+}
+
+/* --- MOBILE --- */
+@media (max-width: 768px) {
+    :root {
+        --h1-size: 2.75rem;
+        --space-xl: 4rem;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    /* Simplified for now */
+    .button-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

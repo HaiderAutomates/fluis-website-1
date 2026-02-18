@@ -1,0 +1,79 @@
+:root {
+  /* FLUIS.ai - AGENCY CLEAN EDITION (Orange/Dark Premium) */
+
+  /* 
+   * COLOR PALETTE -> "Vibrant Orange & Deep Navy"
+   * Strategy: High contrast, clean whitespace, vibrant orange actions.
+   */
+  --color-bg-deep: #FFFFFF;
+  /* Pure White */
+  --color-bg-surface: #F5F5F7;
+  /* Light Gray for sections/contrast */
+  --color-bg-glass: rgba(255, 255, 255, 0.9);
+  /* Frosted Glass */
+
+  --color-primary: #F95228;
+  /* Vibrant Orange - The "Action" Color */
+  --color-primary-glow: rgba(249, 82, 40, 0.35);
+  /* Soft Orange Glow */
+  --color-primary-deep: #D8431E;
+  /* Darker Orange - Hover States */
+
+  --color-accent: #0F1115;
+  /* Deep Navy/Black for headers & primary elements */
+  
+  --color-secondary: #000000;
+  /* Pure Black secondary */
+
+  --color-success: #10B981;
+  /* Emerald 500 - Success states */
+  --color-success-glow: rgba(16, 185, 129, 0.2);
+
+  /* Text Colors */
+  --color-text-main: #0F1115;
+  /* Deep Navy/Black - Primary Text */
+  --color-text-body: #4B5563;
+  /* Cool Gray 600 - Body Text */
+  --color-text-mute: #9CA3AF;
+  /* Cool Gray 400 - Subtext */
+
+  /* BORDERS */
+  --border-subtle: #E5E7EB;
+  /* Light grey borders */
+  --border-focus: rgba(249, 82, 40, 0.4);
+  /* Orange focus ring */
+
+  /* TYPOGRAPHY */
+  --font-display: 'Inter', sans-serif;
+  --font-ui: 'Inter', sans-serif;
+
+  --h1-size: clamp(3rem, 6vw, 4.5rem);
+  --h2-size: clamp(2rem, 4vw, 3rem);
+  --h3-size: 1.5rem;
+  --body-size: 1.05rem;
+
+  /* SPACING - CLEAN & OPEN */
+  --space-xs: 0.5rem;
+  --space-sm: 1.25rem;
+  --space-md: 2.5rem;
+  --space-lg: 5rem;
+  --space-xl: 9rem;
+
+  /* EFFECTS */
+  --shadow-glow: 0 0 50px -10px var(--color-primary-glow);
+  --shadow-card: 0 4px 20px -2px rgba(15, 17, 21, 0.06);
+  /* Clean, subtle shadow */
+  --shadow-hover: 0 10px 30px -4px rgba(15, 17, 21, 0.1);
+
+  --glass-blur: 20px;
+  
+  /* RADIUS - MODERN & SOFT */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;   /* Standard card radius */
+  --radius-pill: 9999px; /* Buttons */
+
+  /* ANIMATIONS */
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-smooth: cubic-bezier(0.33, 1, 0.68, 1);
+}

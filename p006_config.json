@@ -1,0 +1,10 @@
+{
+    "github_url": "https://github.com/HaiderAutomates/My-Website.git",
+    "review_focus": [
+        "SEO",
+        "Performance",
+        "Code Style",
+        "Responsiveness"
+    ],
+    "local_repo_path": ".tmp/p006_website_code"
+}
