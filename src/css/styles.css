@@ -714,7 +714,11 @@ details div {
     color: #fff;
 }
 
-.section-dark h1,
+
+.section-dark h1 {
+    color: var(--color-primary);
+}
+
 .section-dark h2,
 .section-dark h3,
 .section-dark h4 {
