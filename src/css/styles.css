@@ -214,18 +214,24 @@ p {
     left: 0;
     right: 0;
     z-index: 100;
-    background: rgba(255, 255, 255, 0.85);
-    /* White Header */
+    background: rgba(10, 10, 10, 0.9);
+    /* Black Header */
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border-subtle);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
+    color: #fff;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Ensure logo text is white */
+.header .logo-text {
+    color: #fff;
 }
 
 .nav ul {
@@ -235,14 +241,14 @@ p {
 }
 
 .nav a {
-    color: var(--color-text-body);
+    color: #9CA3AF;
     font-weight: 500;
     font-size: 0.95rem;
     transition: color 0.2s;
 }
 
 .nav a:hover {
-    color: var(--color-text-main);
+    color: #fff;
 }
 
 /* --- HERO --- */
@@ -565,27 +571,21 @@ details div {
 
 /* --- INDUSTRIES SECTION --- */
 .industries-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
-    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 @media (max-width: 900px) {
-    .industries-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 500px) {
-    .industries-grid {
-        grid-template-columns: 1fr;
-    }
+    /* Flex handles wrapping automatically, usually no media query needed for columns */
 }
 
 .industry-card {
     text-align: center;
+    flex: 0 1 300px;
 }
 
 .industry-pill {
@@ -723,6 +723,20 @@ details div {
 
 .section-dark .text-gradient {
     background: linear-gradient(135deg, #FFFFFF 0%, #D1D5DB 100%);
+}
+
+.section-dark details {
+    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.section-dark summary {
+    color: #fff;
+}
+
+.section-dark details div {
+    color: #D1D5DB;
+    border-top-color: rgba(255, 255, 255, 0.1);
 }
 
 .section-light {
