@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>About — Fluis.ai | Why We Exist</title>
+  <meta name="description" content="We started Fluis.ai to bridge the growing gap between small businesses and AI. Simple pricing. Done for you. No results? No charge.">
+  <meta name="keywords" content="about Fluis.ai, AI agency, small business AI, talking websites, done for you AI, results as a service">
+  <link rel="canonical" href="https://fluis.ai/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About — Fluis.ai | Why We Exist">
+  <meta property="og:description" content="We started Fluis.ai to bridge the growing gap between small businesses and AI technology. Done for you. No results? No charge.">
+  <meta property="og:url" content="https://fluis.ai/about.html">
+  <meta property="og:site_name" content="Fluis.ai">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About — Fluis.ai">
+  <meta name="twitter:description" content="We bridge the growing gap between small businesses and AI. Done for you. No results? No charge.">
+
+  <!-- FOUC Prevention (blocking) -->
+  <script>
+  (function(){
+    var t = localStorage.getItem('theme');
+    if (!t) {
+      t = window.matchMedia('(prefers-color-scheme:light)').matches ? 'light' : 'dark';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+  })()
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preload" href="/assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/jetbrains-mono-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Fluis.ai",
+    "url": "https://fluis.ai",
+    "description": "AI-powered talking websites for small businesses. Voice and chat agents that book appointments 24/7."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Branded Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <svg class="preloader-logo" viewBox="0 0 240 50" fill="none" stroke="var(--color-text)" stroke-width="2">
+      <text x="10" y="38" font-family="Inter, sans-serif" font-size="40" font-weight="800"
+            fill="none" stroke="var(--color-text)" stroke-width="1.5">
+        Fluis<tspan fill="none" stroke="var(--color-accent)">.ai</tspan>
+      </text>
+    </svg>
+    <div class="preloader-waveform"></div>
+  </div>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Film Grain -->
+  <svg class="film-grain" aria-hidden="true">
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+    </filter>
+    <rect width="100%" height="100%" filter="url(#grain)" />
+  </svg>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Fluis.ai — Home">
+        Fluis<span class="logo-dot">.</span>ai
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/services.html" class="nav-link">Services</a>
+        <a href="/pricing.html" class="nav-link">Pricing</a>
+        <a href="/about.html" class="nav-link" aria-current="page">About</a>
+        <div class="nav-indicator" aria-hidden="true"></div>
+      </nav>
+
+      <a href="#book-call" class="btn-primary nav-cta">Book a Free Demo</a>
+
+      <button
+        class="nav-hamburger"
+        aria-expanded="false"
+        aria-controls="mobile-nav-overlay"
+        aria-label="Open navigation menu"
+      >
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div
+    id="mobile-nav-overlay"
+    class="mobile-nav-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Navigation menu"
+  >
+    <nav class="mobile-nav-links">
+      <a href="/" class="mobile-nav-link">Home</a>
+      <a href="/services.html" class="mobile-nav-link">Services</a>
+      <a href="/pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="/about.html" class="mobile-nav-link">About</a>
+      <a href="#book-call" class="btn-primary mobile-nav-cta">Book a Free Demo</a>
+    </nav>
+  </div>
+
+  <!-- Barba Wrapper -->
+  <div data-barba="wrapper">
+    <main id="main-content" class="page-about" data-barba="container" data-barba-namespace="about">
+
+
+      <!-- ========== SECTION 1: ABOUT HERO ========== -->
+      <section id="about-hero" class="about-hero" aria-label="About Fluis.ai">
+        <!-- Ambient gradient orbs -->
+        <div class="about-hero__orb about-hero__orb--red" aria-hidden="true"></div>
+        <div class="about-hero__orb about-hero__orb--neutral" aria-hidden="true"></div>
+
+        <div class="container about-hero__content">
+          <span class="about-hero__watermark" aria-hidden="true">&ldquo;</span>
+          <p class="about-hero__manifesto">
+            There is a growing gap between local businesses and AI technology.
+            Business owners who are not tech-savvy are falling further behind every day.
+            <span class="about-hero__manifesto-accent">
+              We started Fluis.ai to bridge that gap<span class="accent-dot">.</span>
+            </span>
+          </p>
+          <span class="about-hero__attribution">&mdash; The reason we exist</span>
+        </div>
+
+        <div class="about-hero__scroll-hint" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M7 13l5 5 5-5M7 7l5 5 5-5"/>
+          </svg>
+        </div>
+      </section>
+
+
+      <!-- ========== SECTION 2: THE PROBLEM ========== -->
+      <section id="about-problem" class="about-problem section-alt" aria-label="The problem we solve">
+        <div class="container">
+          <span class="about-problem__label">The Problem</span>
+          <h2 class="about-problem__headline">
+            The Gap Is Growing<span class="accent-dot">.</span> Every Day<span class="accent-dot">.</span>
+          </h2>
+
+          <div class="about-problem__gap-visual" aria-label="Visualization of the AI gap between businesses">
+            <div class="about-problem__side about-problem__side--without">
+              <span class="about-problem__side-label">Without AI</span>
+              <ul class="about-problem__side-list">
+                <li>Missed calls go to voicemail</li>
+                <li>Leads lost to competitors</li>
+                <li>No coverage after hours</li>
+                <li>Manual follow-ups (or none)</li>
+              </ul>
+            </div>
+
+            <div class="about-problem__divider" aria-hidden="true">
+              <div class="about-problem__divider-line"></div>
+              <span class="about-problem__divider-label">The Gap</span>
+            </div>
+
+            <div class="about-problem__side about-problem__side--with">
+              <span class="about-problem__side-label">With AI</span>
+              <ul class="about-problem__side-list">
+                <li>Every call answered instantly</li>
+                <li>Leads captured and qualified</li>
+                <li>24/7 coverage, no staff needed</li>
+                <li>Automated follow-ups and booking</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="about-problem__kicker">
+            In 6 to 12 months, this gap will be enormous. Business owners who are not tech-savvy
+            are falling further behind every day. They cannot keep up with basic websites,
+            let alone artificial intelligence.
+          </p>
+        </div>
+      </section>
+
+
+      <!-- ========== SECTION 3: THE MISSION ========== -->
+      <section id="about-mission" class="about-mission" aria-labelledby="mission-heading">
+        <div class="container">
+          <span class="about-mission__label">Our Mission</span>
+          <h2 id="mission-heading" class="about-mission__headline">
+            Make AI Accessible for Every Business Owner<span class="accent-dot">.</span>
+          </h2>
+          <p class="about-mission__body">
+            We help small and medium businesses implement AI &mdash; so they can capture every lead,
+            book every appointment, and never miss a call. No tech skills needed. No DIY.
+            We build it, we manage it, we make it work.
+          </p>
+          <div class="about-mission__pillars">
+            <div class="about-mission__pillar">
+              <span class="about-mission__pillar-number">01</span>
+              <h3 class="about-mission__pillar-title">Bridge the Gap</h3>
+              <p class="about-mission__pillar-body">AI is moving fast. Most business owners cannot keep up. We make sure they do not have to.</p>
+            </div>
+            <div class="about-mission__pillar">
+              <span class="about-mission__pillar-number">02</span>
+              <h3 class="about-mission__pillar-title">Real-World Results</h3>
+              <p class="about-mission__pillar-body">We are not building AI for the sake of it. Every feature exists to book appointments and grow revenue.</p>
+            </div>
+            <div class="about-mission__pillar">
+              <span class="about-mission__pillar-number">03</span>
+              <h3 class="about-mission__pillar-title">Simplicity at Scale</h3>
+              <p class="about-mission__pillar-body">We believe powerful technology should feel effortless. If it is complicated, we have not done our job.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ========== SECTION 4: CORE VALUES ========== -->
+      <section id="about-values" class="about-values section-alt" aria-labelledby="values-heading">
+        <div class="container">
+          <span class="about-values__label">What We Stand For</span>
+          <h2 id="values-heading" class="about-values__headline">
+            Four Principles<span class="accent-dot">.</span> Zero Exceptions<span class="accent-dot">.</span>
+          </h2>
+
+          <div class="about-values__grid">
+            <!-- Value 1: Simplicity First -->
+            <div class="about-values__card">
+              <div class="about-values__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M8 12l3 3 5-6"/>
+                </svg>
+              </div>
+              <h3 class="about-values__title">Simplicity First</h3>
+              <p class="about-values__body">We make AI dead simple for non-tech business owners. If you can describe your business, we can automate it. No jargon. No manuals. No learning curve.</p>
+            </div>
+
+            <!-- Value 2: Results Over Promises -->
+            <div class="about-values__card">
+              <div class="about-values__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
+              </div>
+              <h3 class="about-values__title">Results Over Promises</h3>
+              <p class="about-values__body">We only charge when we deliver real outcomes. If our agent does not book a single appointment, you do not pay. That is not a slogan. That is our billing model.</p>
+            </div>
+
+            <!-- Value 3: Transparency -->
+            <div class="about-values__card">
+              <div class="about-values__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+              </div>
+              <h3 class="about-values__title">Transparency</h3>
+              <p class="about-values__body">No contracts. No hidden fees. No fine print. We are honest about what AI can and cannot do. Month-to-month. Cancel anytime. That is it.</p>
+            </div>
+
+            <!-- Value 4: RAAS (accent) -->
+            <div class="about-values__card about-values__card--accent">
+              <div class="about-values__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <h3 class="about-values__title">Results as a Service</h3>
+              <p class="about-values__body">Not SaaS. RAAS. We make money only when we make businesses money. That alignment is not just our guarantee &mdash; it is our entire business model.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ========== SECTION 5: THE APPROACH ========== -->
+      <section id="about-approach" class="about-approach" aria-labelledby="approach-heading">
+        <div class="container">
+          <span class="about-approach__label">How We Work</span>
+          <h2 id="approach-heading" class="about-approach__headline">
+            Done For You<span class="accent-dot">.</span> Every Step<span class="accent-dot">.</span>
+          </h2>
+          <p class="about-approach__sub">
+            We do not hand you a login and wish you luck. We build everything,
+            manage everything, and only succeed when you succeed.
+          </p>
+
+          <div class="about-approach__steps" role="list">
+            <div class="about-approach__track" aria-hidden="true"></div>
+
+            <div class="about-approach__step" role="listitem">
+              <div class="about-approach__marker" aria-hidden="true"></div>
+              <div class="about-approach__step-content">
+                <span class="about-approach__step-number">01</span>
+                <h3 class="about-approach__step-title">We Learn Your Business</h3>
+                <p class="about-approach__step-body">One 45-minute call. We ask about your services, your hours, your customers. That is your entire contribution to the process.</p>
+              </div>
+            </div>
+
+            <div class="about-approach__step" role="listitem">
+              <div class="about-approach__marker" aria-hidden="true"></div>
+              <div class="about-approach__step-content">
+                <span class="about-approach__step-number">02</span>
+                <h3 class="about-approach__step-title">We Build Everything</h3>
+                <p class="about-approach__step-body">Website, AI agent, CRM, automations &mdash; all built in 3 days. Trained on your business, your services, your brand voice.</p>
+              </div>
+            </div>
+
+            <div class="about-approach__step" role="listitem">
+              <div class="about-approach__marker" aria-hidden="true"></div>
+              <div class="about-approach__step-content">
+                <span class="about-approach__step-number">03</span>
+                <h3 class="about-approach__step-title">You Try It Risk-Free</h3>
+                <p class="about-approach__step-body">7-day free trial. Full system, no limitations. If you do not like it, you get a full refund &mdash; including the setup fee.</p>
+              </div>
+            </div>
+
+            <div class="about-approach__step about-approach__step--accent" role="listitem">
+              <div class="about-approach__marker" aria-hidden="true"></div>
+              <div class="about-approach__step-content">
+                <span class="about-approach__step-number">04</span>
+                <h3 class="about-approach__step-title">We Earn It Every Month</h3>
+                <p class="about-approach__step-body">No contracts. No lock-in. If the AI does not book appointments, you do not pay. We make money only when we make you money. That is RAAS.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ========== SECTION 6: BOTTOM CTA ========== -->
+      <section id="bottom-cta" class="bottom-cta" aria-label="Get started">
+        <div class="container">
+          <h2 class="bottom-cta__headline">Ready to See What AI Can Do for Your Business?</h2>
+          <p class="bottom-cta__subheadline">
+            Book a free 45-minute discovery call. No pitch. No pressure.
+            Just a conversation about your business and how AI can help it grow.
+          </p>
+          <div class="bottom-cta__actions">
+            <a href="#book-call" class="btn-primary">Book a Free Demo</a>
+            <a href="/services.html" class="bottom-cta__secondary">See Our Services &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+  </div><!-- /[data-barba="wrapper"] -->
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo footer-logo" aria-label="Fluis.ai — Home">
+            Fluis<span class="logo-dot">.</span>ai
+          </a>
+          <p class="footer-tagline">We help businesses implement AI. Simply.</p>
+          <a href="mailto:hello@fluis.ai" class="footer-email">hello@fluis.ai</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Company</h3>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Services</h3>
+          <ul class="footer-links">
+            <li><a href="/services.html#website">Website & Hosting</a></li>
+            <li><a href="/services.html#chat">Chat Agent</a></li>
+            <li><a href="/services.html#voice">Voice Agent</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-trust">
+        <span class="trust-badge">Done for you</span>
+        <span class="trust-divider" aria-hidden="true"></span>
+        <span class="trust-badge">7-day free trial</span>
+        <span class="trust-divider" aria-hidden="true"></span>
+        <span class="trust-badge">No results? No charge</span>
+        <span class="trust-divider" aria-hidden="true"></span>
+        <span class="trust-badge">Setup fee refundable</span>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Fluis.ai</p>
+        <div class="footer-legal">
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div id="book-call" class="booking-modal" role="dialog" aria-modal="true" aria-label="Book a free demo">
+    <div class="booking-modal__backdrop"></div>
+    <div class="booking-modal__content">
+      <button class="booking-modal__close" aria-label="Close booking form">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+      <h2 class="booking-modal__title">Book Your Free Discovery Call</h2>
+      <p class="booking-modal__subtitle">45 minutes. No pressure. No pitch. Just a conversation about your business.</p>
+      <div class="booking-modal__calendar" style="background: var(--color-surface-2); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; min-height: 400px;">
+        <p style="color: var(--color-text-dim); font-size: var(--text-sm);">GHL Calendar Embed — Placeholder</p>
+      </div>
+      <div class="booking-modal__fallback">
+        <p>Having trouble? Email us at <a href="mailto:hello@fluis.ai">hello@fluis.ai</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="mobile-sticky-cta" aria-hidden="true">
+    <div class="container">
+      <a href="#book-call" class="btn-primary mobile-sticky-btn">Book a Free Demo</a>
+    </div>
+  </div>
+
+  <!-- Theme Toggle -->
+  <button
+    class="theme-toggle"
+    role="switch"
+    aria-checked="true"
+    aria-label="Switch to light mode"
+  >
+    <div class="theme-icon theme-icon--sun">
+      <svg class="sun-svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle class="sun-core" cx="12" cy="12" r="5" fill="currentColor"/>
+        <g class="sun-rays">
+          <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+    <div class="theme-icon theme-icon--moon">
+      <svg class="moon-svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path class="moon-body" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"/>
+        <circle class="moon-star moon-star--1" cx="18" cy="5" r="1" fill="currentColor"/>
+        <circle class="moon-star moon-star--2" cx="22" cy="9" r="0.6" fill="currentColor"/>
+        <circle class="moon-star moon-star--3" cx="16" cy="2" r="0.5" fill="currentColor"/>
+      </svg>
+    </div>
+  </button>
+
+  <!-- Voice Bubble Placeholder -->
+  <div class="voice-bubble-placeholder" aria-label="Talk to our AI agent">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+      <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+      <line x1="12" y1="19" x2="12" y2="23"/>
+      <line x1="8" y1="23" x2="16" y2="23"/>
+    </svg>
+  </div>
+
+  <!-- Scripts (same order as other pages) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrambleTextPlugin.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/Flip.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1/dist/lenis.min.js" defer></script>
+  <script src="https://unpkg.com/@barba/core" defer></script>
+  <script defer src="/js/main.js"></script>
+  <script defer src="/js/animations/transitions.js"></script>
+  <script defer src="/js/animations/modal.js"></script>
+  <script defer src="/js/animations/sticky-cta.js"></script>
+  <script defer src="/js/animations/about.js"></script>
+  <script defer src="/js/animations/audio.js"></script>
+  <script defer src="/js/animations/preloader.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Pricing — Fluis.ai | Simple Pricing for AI-Powered Websites</title>
+  <meta name="description" content="Simple, transparent pricing. Website from $27/mo. Chat Agent $147/mo. Voice Agent $247/mo. No contracts. No results? No charge.">
+  <meta name="keywords" content="AI agent pricing, voice agent cost, chat agent pricing, small business AI, talking website pricing, appointment booking AI cost">
+  <link rel="canonical" href="https://fluis.ai/pricing.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pricing — Fluis.ai | Simple Pricing. Serious Results.">
+  <meta property="og:description" content="Website from $27/mo. Chat Agent $147/mo. Voice Agent $247/mo. No contracts. No results? No charge.">
+  <meta property="og:url" content="https://fluis.ai/pricing.html">
+  <meta property="og:site_name" content="Fluis.ai">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pricing — Fluis.ai">
+  <meta name="twitter:description" content="Simple, transparent pricing for AI-powered websites. No contracts. No results? No charge.">
+
+  <!-- FOUC Prevention (blocking) -->
+  <script>
+  (function(){
+    var t = localStorage.getItem('theme');
+    if (!t) {
+      t = window.matchMedia('(prefers-color-scheme:light)').matches ? 'light' : 'dark';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+  })()
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preload" href="/assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/jetbrains-mono-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Fluis.ai",
+    "url": "https://fluis.ai",
+    "description": "AI-powered talking websites for small businesses. Voice and chat agents that book appointments 24/7."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Branded Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <svg class="preloader-logo" viewBox="0 0 240 50" fill="none" stroke="var(--color-text)" stroke-width="2">
+      <text x="10" y="38" font-family="Inter, sans-serif" font-size="40" font-weight="800"
+            fill="none" stroke="var(--color-text)" stroke-width="1.5">
+        Fluis<tspan fill="none" stroke="var(--color-accent)">.ai</tspan>
+      </text>
+    </svg>
+    <div class="preloader-waveform"></div>
+  </div>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Film Grain -->
+  <svg class="film-grain" aria-hidden="true">
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+    </filter>
+    <rect width="100%" height="100%" filter="url(#grain)" />
+  </svg>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Fluis.ai — Home">
+        Fluis<span class="logo-dot">.</span>ai
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/services.html" class="nav-link">Services</a>
+        <a href="/pricing.html" class="nav-link" aria-current="page">Pricing</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <div class="nav-indicator" aria-hidden="true"></div>
+      </nav>
+
+      <a href="#book-call" class="btn-primary nav-cta">Book a Free Demo</a>
+
+      <button
+        class="nav-hamburger"
+        aria-expanded="false"
+        aria-controls="mobile-nav-overlay"
+        aria-label="Open navigation menu"
+      >
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div
+    id="mobile-nav-overlay"
+    class="mobile-nav-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Navigation menu"
+  >
+    <nav class="mobile-nav-links">
+      <a href="/" class="mobile-nav-link">Home</a>
+      <a href="/services.html" class="mobile-nav-link">Services</a>
+      <a href="/pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="/about.html" class="mobile-nav-link">About</a>
+      <a href="#book-call" class="btn-primary mobile-nav-cta">Book a Free Demo</a>
+    </nav>
+  </div>
+
+  <!-- Barba Wrapper -->
+  <div data-barba="wrapper">
+    <main id="main-content" class="page-pricing" data-barba="container" data-barba-namespace="pricing">
+
+
+      <!-- ========== SECTION 1: PRICING HERO ========== -->
+      <section id="pricing-hero" class="pricing-hero" aria-label="Pricing overview">
+        <!-- Ambient gradient orbs -->
+        <div class="pricing-hero__orb pricing-hero__orb--red" aria-hidden="true"></div>
+        <div class="pricing-hero__orb pricing-hero__orb--neutral" aria-hidden="true"></div>
+
+        <div class="container pricing-hero__content">
+          <span class="pricing-hero__watermark" aria-hidden="true">$</span>
+          <h1 class="pricing-hero__headline">Simple Pricing<span class="accent-dot">.</span> Serious Results<span class="accent-dot">.</span></h1>
+          <p class="pricing-hero__sub">One price. Everything included. Cancel anytime.</p>
+          <div class="pricing-hero__trust">
+            <span class="trust-pill">No contracts</span>
+            <span class="trust-pill">Setup fee refundable</span>
+            <span class="trust-pill trust-pill--accent">No results? No charge</span>
+          </div>
+        </div>
+
+        <div class="pricing-hero__scroll-hint" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M7 13l5 5 5-5M7 7l5 5 5-5"/>
+          </svg>
+        </div>
+      </section>
+
+
+      <!-- ========== SECTION 2: PRICING CARDS ========== -->
+      <section id="pricing-plans" class="pricing-plans" aria-label="Pricing plans">
+        <div class="container">
+          <div class="pricing-plans__grid">
+
+            <!-- Card 1: Website & Hosting -->
+            <div class="pricing-plan pricing-plan--website">
+              <span class="pricing-plan__label">Website &amp; Hosting</span>
+              <h3 class="pricing-plan__name">Professional Website</h3>
+              <p class="pricing-plan__desc">Built, hosted, and maintained for you.</p>
+
+              <div class="pricing-plan__toggle" role="radiogroup" aria-label="Website tier">
+                <button class="pricing-plan__toggle-btn pricing-plan__toggle-btn--active" role="radio" aria-checked="true" data-tier="standard">3 Pages</button>
+                <button class="pricing-plan__toggle-btn" role="radio" aria-checked="false" data-tier="premium">5 Pages</button>
+              </div>
+
+              <div class="pricing-plan__price-block">
+                <span class="pricing-plan__price" data-standard="$27" data-premium="$47">$27</span>
+                <span class="pricing-plan__period">/mo</span>
+              </div>
+              <span class="pricing-plan__setup">$47 one-time setup</span>
+
+              <ul class="pricing-plan__features">
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  Professional website
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  Hosting included
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  Custom domain
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  Mobile responsive
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  Basic SEO
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  AI-assisted content
+                </li>
+                <li class="pricing-plan__feature--disabled">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="8" x2="13" y2="8"/></svg>
+                  No AI agents
+                </li>
+                <li class="pricing-plan__feature--disabled">
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="8" x2="13" y2="8"/></svg>
+                  No CRM
+                </li>
+              </ul>
+
+              <div class="pricing-plan__cta">
+                <a href="/services.html#website" class="btn-secondary">Learn More</a>
+              </div>
+            </div>
+
+            <!-- Card 2: Chat Agent -->
+            <div class="pricing-plan pricing-plan--chat">
+              <span class="pricing-plan__label">Chat Agent</span>
+              <span class="badge badge--free">Free website included</span>
+              <h3 class="pricing-plan__name">Chat Intelligence</h3>
+              <p class="pricing-plan__desc">AI chat widget that qualifies leads and books appointments.</p>
+
+              <div class="pricing-plan__price-block">
+                <span class="pricing-plan__price">$147</span>
+                <span class="pricing-plan__period">/mo</span>
+              </div>
+              <span class="pricing-plan__setup">$197 setup &middot; refundable</span>
+              <span class="pricing-plan__daily">&asymp; $5/day</span>
+
+              <ul class="pricing-plan__features">
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  Everything in Website
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  AI chat widget
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  24/7 lead capture
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  Lead qualification
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  Appointment booking
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  CRM dashboard
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  Email automations
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  7-day free trial
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  RAAS guarantee
+                </li>
+              </ul>
+
+              <div class="pricing-plan__cta">
+                <a href="#book-call" class="btn-secondary">Start Free Trial</a>
+              </div>
+            </div>
+
+            <!-- Card 3: Voice Agent (RECOMMENDED) -->
+            <div class="pricing-plan pricing-plan--voice">
+              <span class="badge badge--recommended">Recommended</span>
+              <span class="pricing-plan__label">Voice Agent</span>
+              <span class="badge badge--free">Free website + CRM included</span>
+              <h3 class="pricing-plan__name">Voice Intelligence</h3>
+              <p class="pricing-plan__desc">AI voice agent on your website and phone line.</p>
+
+              <div class="pricing-plan__price-block">
+                <span class="pricing-plan__price">$247</span>
+                <span class="pricing-plan__period">/mo</span>
+              </div>
+              <span class="pricing-plan__setup">$297 setup &middot; refundable</span>
+              <span class="pricing-plan__daily">&asymp; $8/day</span>
+
+              <ul class="pricing-plan__features">
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  Everything in Chat
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  AI voice widget
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  Dedicated phone number
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  Call forwarding
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  Sub-500ms response
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  Natural conversation
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  CRM dashboard
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  All automations
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  7-day free trial
+                </li>
+                <li>
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3.5 8.5l3 3 6-7"/></svg>
+                  RAAS guarantee
+                </li>
+              </ul>
+
+              <div class="pricing-plan__cta">
+                <a href="#book-call" class="btn-primary">Start Free Trial</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ========== SECTION 3: FEATURE COMPARISON TABLE ========== -->
+      <section id="pricing-comparison" class="comparison-table" aria-label="Feature comparison">
+        <div class="container">
+          <h2 class="comparison-table__headline">Compare All Features</h2>
+          <details class="comparison-table__details">
+            <summary>
+              View full comparison
+              <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </summary>
+            <div class="comparison-table__content">
+              <table class="comparison-table__grid">
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>Website</th>
+                    <th>Chat Agent</th>
+                    <th class="col-voice">Voice Agent <small>Recommended</small></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="group-header"><td colspan="4">Core</td></tr>
+                  <tr>
+                    <td>Professional website</td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>Hosting included</td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>Custom domain</td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>Mobile responsive</td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>Basic SEO</td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>AI-assisted content writing</td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+
+                  <tr class="group-header"><td colspan="4">AI Capabilities</td></tr>
+                  <tr>
+                    <td>AI chat widget</td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="dash" aria-label="No">&mdash;</span></td>
+                  </tr>
+                  <tr>
+                    <td>AI voice widget</td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>Dedicated phone number</td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>Call forwarding</td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>24/7 lead capture</td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>Lead qualification</td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>Appointment booking</td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+
+                  <tr class="group-header"><td colspan="4">Dashboard &amp; Automations</td></tr>
+                  <tr>
+                    <td>Customer management dashboard</td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>Booking confirmation</td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>Staff arrival notification</td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>Job follow-ups</td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>Lead tracking &amp; reporting</td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+
+                  <tr class="group-header"><td colspan="4">Support &amp; Guarantee</td></tr>
+                  <tr>
+                    <td>7-day free trial</td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>RAAS guarantee</td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>Setup fee refundable</td>
+                    <td><span class="dash" aria-label="No">&mdash;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>Month-to-month billing</td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                  <tr>
+                    <td>No contracts</td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td><span class="check" aria-label="Yes">&#10003;</span></td>
+                    <td class="col-voice"><span class="check" aria-label="Yes">&#10003;</span></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>Monthly</td>
+                    <td><span class="price-value">From $27/mo</span></td>
+                    <td><span class="price-value">$147/mo</span></td>
+                    <td class="col-voice"><span class="price-value">$247/mo</span></td>
+                  </tr>
+                  <tr>
+                    <td>Setup</td>
+                    <td><span class="price-setup">$47</span></td>
+                    <td><span class="price-setup">$197</span></td>
+                    <td class="col-voice"><span class="price-setup">$297</span></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><a href="/services.html#website" class="service-detail__link">See Details</a></td>
+                    <td><a href="#book-call" class="btn-secondary" style="font-size:var(--text-sm);padding:6px 16px;">Start Trial</a></td>
+                    <td class="col-voice"><a href="#book-call" class="btn-primary" style="font-size:var(--text-sm);padding:6px 16px;">Start Trial</a></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </details>
+        </div>
+      </section>
+
+
+      <!-- ========== SECTION 4: RAAS GUARANTEE ========== -->
+      <section id="pricing-guarantee" class="raas-callout" aria-label="Results as a Service guarantee">
+        <div class="container">
+          <div class="raas-callout__content">
+            <h2 class="raas-callout__headline">No Results? No Charge<span class="accent-dot">.</span></h2>
+            <p class="raas-callout__body">Every Chat Agent and Voice Agent subscription comes with our Results as a Service guarantee. If our AI agent doesn&rsquo;t book a single appointment for your business in a given month, you don&rsquo;t pay for that month. During your 7-day trial, if you don&rsquo;t like it &mdash; full refund including the setup fee. No fine print.</p>
+            <div class="raas-callout__cta">
+              <a href="#book-call" class="btn-primary">Try Risk-Free</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ========== SECTION 5: HOW AI COSTS WORK ========== -->
+      <section id="ai-costs" class="ai-costs" aria-label="AI usage costs explained">
+        <div class="container">
+          <span class="ai-costs__label">Transparency</span>
+          <h2 class="ai-costs__headline">How AI Costs Work</h2>
+          <div class="ai-costs__grid">
+
+            <div class="ai-costs__card">
+              <div class="ai-costs__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="5" width="20" height="14" rx="2"/>
+                  <line x1="2" y1="10" x2="22" y2="10"/>
+                </svg>
+              </div>
+              <h3 class="ai-costs__card-title">What You Pay Us</h3>
+              <p class="ai-costs__card-body">A flat monthly fee for the website, agent, CRM, and automations. No hidden charges. No per-conversation fees from us.</p>
+            </div>
+
+            <div class="ai-costs__card">
+              <div class="ai-costs__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <h3 class="ai-costs__card-title">AI Usage (Pass-Through)</h3>
+              <p class="ai-costs__card-body">AI providers charge per conversation. Voice calls cost roughly 30&ndash;80p per 5-minute call (under $1). We pass this through at cost &mdash; zero markup.</p>
+            </div>
+
+          </div>
+          <p class="ai-costs__note">Most businesses spend less than $30/month on AI usage.</p>
+        </div>
+      </section>
+
+
+      <!-- ========== SECTION 6: PRICING FAQ ========== -->
+      <section id="pricing-faq" class="pricing-faq" aria-labelledby="pricing-faq-heading">
+        <div class="container">
+          <h2 id="pricing-faq-heading" class="pricing-faq__headline">Pricing Questions</h2>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>Is there a contract?</summary>
+              <div class="faq-item__answer">
+                <p>Never. Month-to-month billing. Cancel anytime &mdash; no cancellation fees, no lock-in, no awkward phone calls. We earn your business every single month.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What&rsquo;s included in the setup fee?</summary>
+              <div class="faq-item__answer">
+                <p>Everything. Your website, CRM account, AI agent configuration, business knowledge training, automation workflows, and calendar setup. We build it all &mdash; you just tell us about your business.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What if the agent doesn&rsquo;t book any appointments?</summary>
+              <div class="faq-item__answer">
+                <p>You don&rsquo;t pay. Our entire model is Results as a Service. If the AI doesn&rsquo;t book a single appointment in any given month, that month is free. During the 7-day trial, if you&rsquo;re not happy &mdash; full refund including the setup fee.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>How long does setup take?</summary>
+              <div class="faq-item__answer">
+                <p>3 days for onboarding (we build everything), then a 7-day free trial where the agent goes live. That&rsquo;s 10 days from sign-up to your first billing &mdash; and only if you&rsquo;re happy.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Can I upgrade or downgrade later?</summary>
+              <div class="faq-item__answer">
+                <p>Yes, anytime. Moving from Website to Chat Agent or Chat to Voice is seamless &mdash; we handle the migration. Downgrading works the same way, effective next billing cycle.</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What about my existing website?</summary>
+              <div class="faq-item__answer">
+                <p>We can embed our AI agents on your existing website instead of building a new one. Same pricing, same features. We just add the chat or voice widget to your current site.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ========== SECTION 7: BOTTOM CTA ========== -->
+      <section id="bottom-cta" class="bottom-cta" aria-label="Get started">
+        <div class="container">
+          <h2 class="bottom-cta__headline">Ready to Stop Missing Leads?</h2>
+          <p class="bottom-cta__subheadline">Book a free 30-minute demo. See the website, try the agent, and if you like it &mdash; we build it all in 3 days. No contracts. No pressure.</p>
+          <div class="bottom-cta__actions">
+            <a href="#book-call" class="btn-primary">Book a Free Demo</a>
+            <a href="/services.html" class="bottom-cta__secondary">See All Services &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+  </div><!-- /[data-barba="wrapper"] -->
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo footer-logo" aria-label="Fluis.ai — Home">
+            Fluis<span class="logo-dot">.</span>ai
+          </a>
+          <p class="footer-tagline">We help businesses implement AI. Simply.</p>
+          <a href="mailto:hello@fluis.ai" class="footer-email">hello@fluis.ai</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Company</h3>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Services</h3>
+          <ul class="footer-links">
+            <li><a href="/services.html#website">Website & Hosting</a></li>
+            <li><a href="/services.html#chat">Chat Agent</a></li>
+            <li><a href="/services.html#voice">Voice Agent</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-trust">
+        <span class="trust-badge">Done for you</span>
+        <span class="trust-divider" aria-hidden="true"></span>
+        <span class="trust-badge">7-day free trial</span>
+        <span class="trust-divider" aria-hidden="true"></span>
+        <span class="trust-badge">No results? No charge</span>
+        <span class="trust-divider" aria-hidden="true"></span>
+        <span class="trust-badge">Setup fee refundable</span>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Fluis.ai</p>
+        <div class="footer-legal">
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div id="book-call" class="booking-modal" role="dialog" aria-modal="true" aria-label="Book a free demo">
+    <div class="booking-modal__backdrop"></div>
+    <div class="booking-modal__content">
+      <button class="booking-modal__close" aria-label="Close booking form">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+      <h2 class="booking-modal__title">Book Your Free Discovery Call</h2>
+      <p class="booking-modal__subtitle">45 minutes. No pressure. No pitch. Just a conversation about your business.</p>
+      <div class="booking-modal__calendar" style="background: var(--color-surface-2); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; min-height: 400px;">
+        <p style="color: var(--color-text-dim); font-size: var(--text-sm);">GHL Calendar Embed — Placeholder</p>
+      </div>
+      <div class="booking-modal__fallback">
+        <p>Having trouble? Email us at <a href="mailto:hello@fluis.ai">hello@fluis.ai</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="mobile-sticky-cta" aria-hidden="true">
+    <div class="container">
+      <a href="#book-call" class="btn-primary mobile-sticky-btn">Book a Free Demo</a>
+    </div>
+  </div>
+
+  <!-- Theme Toggle -->
+  <button
+    class="theme-toggle"
+    role="switch"
+    aria-checked="true"
+    aria-label="Switch to light mode"
+  >
+    <div class="theme-icon theme-icon--sun">
+      <svg class="sun-svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle class="sun-core" cx="12" cy="12" r="5" fill="currentColor"/>
+        <g class="sun-rays">
+          <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+    <div class="theme-icon theme-icon--moon">
+      <svg class="moon-svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path class="moon-body" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"/>
+        <circle class="moon-star moon-star--1" cx="18" cy="5" r="1" fill="currentColor"/>
+        <circle class="moon-star moon-star--2" cx="22" cy="9" r="0.6" fill="currentColor"/>
+        <circle class="moon-star moon-star--3" cx="16" cy="2" r="0.5" fill="currentColor"/>
+      </svg>
+    </div>
+  </button>
+
+  <!-- Voice Bubble Placeholder -->
+  <div class="voice-bubble-placeholder" aria-label="Talk to our AI agent">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+      <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+      <line x1="12" y1="19" x2="12" y2="23"/>
+      <line x1="8" y1="23" x2="16" y2="23"/>
+    </svg>
+  </div>
+
+  <!-- Scripts (same order as other pages) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrambleTextPlugin.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/Flip.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1/dist/lenis.min.js" defer></script>
+  <script src="https://unpkg.com/@barba/core" defer></script>
+  <script defer src="/js/main.js"></script>
+  <script defer src="/js/animations/transitions.js"></script>
+  <script defer src="/js/animations/modal.js"></script>
+  <script defer src="/js/animations/sticky-cta.js"></script>
+  <script defer src="/js/animations/pricing.js"></script>
+  <script defer src="/js/animations/audio.js"></script>
+  <script defer src="/js/animations/preloader.js"></script>
+
+</body>
+</html>
