@@ -1,298 +1,1025 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fluis.ai | The Operating System for Home Services</title>
-    <meta name="description"
-        content="Stop bleeding revenue. Fluis.ai deploys 24/7 AI agents that answer calls, book jobs, and process payments. The unfair advantage for modern contractors.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Fluis.ai — Your Website, But It Talks</title>
+  <meta name="description" content="AI agents that live on your website, answer your customers, and book appointments 24/7. No results? No charge.">
+  <link rel="canonical" href="https://fluis.ai/">
 
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F95228'/%3E%3Cpath d='M18 4L8 18h6l-2 10 10-14h-6l2-10z' fill='white'/%3E%3C/svg%3E">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fluis.ai — Your Website, But It Talks">
+  <meta property="og:description" content="AI agents that live on your website, answer your customers, and book appointments 24/7. No results? No charge.">
+  <meta property="og:url" content="https://fluis.ai/">
+  <meta property="og:site_name" content="Fluis.ai">
 
-    <!-- Premium Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;600;700;800&display=swap"
-        rel="stylesheet">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fluis.ai — Your Website, But It Talks">
+  <meta name="twitter:description" content="AI agents that live on your website, answer your customers, and book appointments 24/7. No results? No charge.">
 
-    <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- FOUC Prevention (blocking) -->
+  <script>
+  (function(){
+    var t = localStorage.getItem('theme');
+    if (!t) {
+      t = window.matchMedia('(prefers-color-scheme:light)').matches ? 'light' : 'dark';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+  })()
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preload" href="/assets/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/jetbrains-mono-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Fluis.ai",
+    "url": "https://fluis.ai",
+    "description": "AI-powered talking websites for small businesses. Voice and chat agents that book appointments 24/7.",
+    "foundingDate": "2026",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@fluis.ai",
+      "contactType": "sales"
+    }
+  }
+  </script>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does it sound like a robot?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not anymore. The 2026 voice models we use have natural breath pauses, filler words, and response times under half a second. Most callers genuinely cannot tell they are speaking to AI."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I take over a conversation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You get notified every time your agent starts a conversation. You can jump into any live chat or view any call log at any time. Think of the AI as your front desk — it handles the initial conversation, but you are always in control."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to change my phone number?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. You keep your existing number. We simply set up call forwarding so that when you cannot pick up — or after business hours — the call routes to your AI agent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a contract?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Never. We earn your business every single month. If we stop delivering results, you leave. No cancellation fees, no lock-in, no awkward phone calls. Month-to-month. Cancel anytime."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if the agent does not book any appointments?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You do not pay. Our entire model is built on Results as a Service. If your AI agent does not book even a single appointment in a given month, we do not charge you for that month."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is included in the setup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Everything. We build your website, set up your CRM, configure all automations, deploy your AI agent, and train it on your business. That is what Done For You means."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does setup take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "3 days for onboarding, then your agent goes live with a 7-day free trial. So from the moment you say yes to having a fully working AI agent is about 10 days."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if I already have a website?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No problem. We can embed our AI agents directly on your existing website. Same pricing, same features, same CRM integration."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <header class="header">
-        <div class="container header-content">
-            <a href="index.html" class="logo"
-                style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none;">
-                <div
-                    style="width: 32px; height: 32px; background: var(--color-primary); border-radius: 8px; display: grid; place-items: center;">
-                    <i data-lucide="zap" color="white" size="20"></i>
-                </div>
-                <span
-                    style="font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; color: #fff; letter-spacing: -0.02em;">Fluis.ai</span>
+  <!-- Branded Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <svg class="preloader-logo" viewBox="0 0 240 50" fill="none" stroke="var(--color-text)" stroke-width="2">
+      <text x="10" y="38" font-family="Inter, sans-serif" font-size="40" font-weight="800"
+            fill="none" stroke="var(--color-text)" stroke-width="1.5">
+        Fluis<tspan fill="none" stroke="var(--color-accent)">.ai</tspan>
+      </text>
+    </svg>
+    <div class="preloader-waveform"></div>
+  </div>
+
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Film Grain -->
+  <svg class="film-grain" aria-hidden="true">
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+    </filter>
+    <rect width="100%" height="100%" filter="url(#grain)" />
+  </svg>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Fluis.ai — Home">
+        Fluis<span class="logo-dot">.</span>ai
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="/" class="nav-link" aria-current="page">Home</a>
+        <a href="/services.html" class="nav-link">Services</a>
+        <a href="/pricing.html" class="nav-link">Pricing</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <div class="nav-indicator" aria-hidden="true"></div>
+      </nav>
+
+      <a href="#book-call" class="btn-primary nav-cta">Book a Free Demo</a>
+
+      <button
+        class="nav-hamburger"
+        aria-expanded="false"
+        aria-controls="mobile-nav-overlay"
+        aria-label="Open navigation menu"
+      >
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div
+    id="mobile-nav-overlay"
+    class="mobile-nav-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Navigation menu"
+  >
+    <nav class="mobile-nav-links">
+      <a href="/" class="mobile-nav-link">Home</a>
+      <a href="/services.html" class="mobile-nav-link">Services</a>
+      <a href="/pricing.html" class="mobile-nav-link">Pricing</a>
+      <a href="/about.html" class="mobile-nav-link">About</a>
+      <a href="#book-call" class="btn-primary mobile-nav-cta">Book a Free Demo</a>
+    </nav>
+  </div>
+
+  <!-- Barba Wrapper -->
+  <div data-barba="wrapper">
+    <main id="main-content" data-barba="container" data-barba-namespace="home">
+
+      <!-- ========== SECTION 1: HERO ========== -->
+      <section id="hero" class="hero">
+        <!-- Dot-grid canvas (interactive scatter) -->
+        <canvas id="hero-dot-grid" aria-hidden="true"></canvas>
+
+        <!-- Gradient orbs (CSS-only ambient movement) -->
+        <div class="hero-orb hero-orb--red" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb--neutral" aria-hidden="true"></div>
+
+        <div class="container hero-content">
+          <h1 class="hero-headline">
+            Your Website,<br>
+            But It
+            <span class="hero-reel-wrapper"><span class="hero-reel" aria-label="Talks and Books"><span class="hero-reel__item hero-reel__item--active">Talks</span><span class="hero-reel__item">Books</span><span class="hero-reel__item">Talks</span></span></span><span class="accent-dot">.</span>
+          </h1>
+          <p class="hero-subheadline">AI agents that live on your website.</p>
+          <div class="hero-cta-group">
+            <a href="#book-call" class="btn-primary">Book a Free Demo</a>
+            <a href="#" class="btn-secondary" data-action="trigger-voice-bubble">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <rect x="2" y="6" width="2" height="4" rx="1" fill="currentColor"/>
+                <rect x="7" y="3" width="2" height="10" rx="1" fill="currentColor"/>
+                <rect x="12" y="5" width="2" height="6" rx="1" fill="currentColor"/>
+              </svg>
+              Try the Agent Now
             </a>
-
-            <nav class="nav">
-                <ul>
-                    <li><a href="services.html">Platform</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="about.html">Mission</a></li>
-                </ul>
-            </nav>
-
-            <div style="display: flex; gap: 1rem;">
-                <!-- <a href="#" style="color: var(--color-text-main); font-weight: 500; display: grid; place-items: center;">Login</a> -->
-                <a href="#contact" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.9rem;">Start Growth
-                    Engine</a>
-            </div>
+          </div>
+          <div class="trust-badges" aria-label="Trust indicators">
+            <span class="trust-badge">Done For You</span>
+            <span class="trust-badge">7-Day Free Trial</span>
+            <span class="trust-badge">No Results, No Charge</span>
+            <span class="trust-badge">Setup Fee Fully Refundable</span>
+          </div>
+          <!-- Scroll indicator -->
+          <div class="hero-scroll-hint" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M7 13l5 5 5-5M7 7l5 5 5-5"/>
+            </svg>
+          </div>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="section section-dark">
-        <div class="aurora-bg"></div>
-        <div class="container text-center relative">
+      </section>
 
 
-            <h1 style="max-width: 20ch; margin: 0 auto var(--space-md);">
-                Your Phone is Ringing.<br>
-                <span class="text-gradient">Is Your Bank Account Growing?</span>
-            </h1>
+      <!-- ========== SECTION 2: PROBLEM STATEMENT — "Three-Moment Story" ========== -->
+      <section id="problem" class="section-alt">
+        <div class="container">
+          <h2 class="problem-heading">
+            You're Doing the Work.
+            <span class="problem-heading__accent">Who's Answering the Phone?</span>
+          </h2>
 
-            <p style="font-size: 1.25rem; color: #D1D5DB; margin: 0 auto var(--space-lg); max-width: 600px;">
-                You miss 30% of calls while on the job. That's $15k/mo on the table.
-            </p>
-
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="#contact" class="btn btn-glow">Deploy Your Agent</a>
-                <a href="#how-it-works" class="btn btn-secondary"><i data-lucide="play-circle" size="18"></i> Hear
-                    Samples</a>
+          <div class="problem-moments">
+            <!-- Moment 1: They Call -->
+            <div class="problem-moment">
+              <div class="problem-moment__icon" aria-hidden="true">
+                <svg viewBox="0 0 80 80" width="80" height="80" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Pulse rings (CSS animated, 3 iterations) -->
+                  <path class="problem-pulse-ring" d="M52 30a12 12 0 0 1 0 20" stroke="var(--color-text-muted)" stroke-width="1.5" fill="none"/>
+                  <path class="problem-pulse-ring problem-pulse-ring--2" d="M57 25a18 18 0 0 1 0 30" stroke="var(--color-text-muted)" stroke-width="1.5" fill="none"/>
+                  <path class="problem-pulse-ring problem-pulse-ring--3" d="M62 20a24 24 0 0 1 0 40" stroke="var(--color-text-muted)" stroke-width="1.5" fill="none"/>
+                  <!-- Phone handset -->
+                  <path d="M25 32c0-2 1-3 3-3h4l3 5-3 2a18 18 0 0 0 8 8l2-3 5 3v4c0 2-1 3-3 3-12 0-19-7-19-19z"
+                        stroke="var(--color-text)" stroke-width="1.5" fill="none"/>
+                </svg>
+              </div>
+              <div class="problem-moment__label">They Call</div>
+              <p class="problem-moment__copy">A customer needs your service. They pick up the phone.</p>
             </div>
 
-            <div style="margin-top: var(--space-lg); color: var(--color-text-mute); font-size: 0.9rem;">
-                <span style="display: inline-flex; align-items: center; gap: 0.5rem; margin-right: 1.5rem;">
-                    <i data-lucide="check-circle" size="16" color="#10B981"></i> Done for you
+            <!-- Moment 2: No Answer -->
+            <div class="problem-moment problem-moment--warning">
+              <div class="problem-moment__icon" aria-hidden="true">
+                <svg viewBox="0 0 80 80" width="80" height="80" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Dimmed phone handset -->
+                  <path d="M25 32c0-2 1-3 3-3h4l3 5-3 2a18 18 0 0 0 8 8l2-3 5 3v4c0 2-1 3-3 3-12 0-19-7-19-19z"
+                        stroke="var(--color-text-dim)" stroke-width="1.5" fill="none" opacity="0.4"/>
+                  <!-- X mark (stroke-dasharray animated) -->
+                  <line class="problem-x-mark" x1="30" y1="30" x2="50" y2="50" stroke="var(--color-accent)" stroke-width="2.5"/>
+                  <line class="problem-x-mark" x1="50" y1="30" x2="30" y2="50" stroke="var(--color-accent)" stroke-width="2.5"/>
+                </svg>
+              </div>
+              <div class="problem-moment__label">No Answer</div>
+              <p class="problem-moment__copy">You're on a job. In a meeting. Driving.</p>
+            </div>
+
+            <!-- Moment 3: Gone -->
+            <div class="problem-moment problem-moment--danger">
+              <div class="problem-moment__icon" aria-hidden="true">
+                <svg viewBox="0 0 80 80" width="80" height="80" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Arrow curving away -->
+                  <path class="problem-arrow-away" d="M20 50 C20 50, 30 50, 35 40 C40 30, 50 30, 55 35 L55 28 M51 28l4 0 0 4"
+                        stroke="var(--color-accent)" stroke-width="2" fill="none"/>
+                </svg>
+              </div>
+              <div class="problem-moment__label">Gone</div>
+              <p class="problem-moment__copy">They call your competitor. You never knew.</p>
+            </div>
+          </div>
+
+          <div class="problem-stats-row">
+            <div class="problem-stat-block">
+              <div class="problem-stat-block__number" data-target="62" data-suffix="%">0%</div>
+              <p class="problem-stat-block__desc">of calls to small businesses go unanswered</p>
+            </div>
+            <div class="problem-stat-block">
+              <div class="problem-stat-block__number" data-target="85" data-suffix="%">0%</div>
+              <p class="problem-stat-block__desc">of those customers will never call back</p>
+            </div>
+          </div>
+
+          <p class="problem-kicker">
+            It's not your fault. But every call you miss, your competitor answers.
+          </p>
+        </div>
+      </section>
+
+
+      <!-- ========== SECTION 3: THE OVERNIGHT ========== -->
+      <section id="solution" aria-labelledby="solution-heading">
+        <div class="container">
+
+          <h2 id="solution-heading" class="overnight-headline">
+            You Slept. Your Business Didn't.
+          </h2>
+          <p class="overnight-sub">Tuesday. 7:02 AM.</p>
+
+          <!-- Notification stack -->
+          <div class="overnight-panel" role="list"
+               aria-label="Overnight activity notifications">
+
+            <div class="overnight-notif" role="listitem">
+              <span class="overnight-notif__dot" aria-hidden="true"></span>
+              <div class="overnight-notif__body">
+                <span class="overnight-notif__time">2:14 AM</span>
+                <span class="overnight-notif__action">Appointment booked</span>
+                <p class="overnight-notif__detail">Sarah M. &middot; Kitchen leak
+                  &middot; Tomorrow, 8:30 AM</p>
+              </div>
+            </div>
+
+            <div class="overnight-notif" role="listitem">
+              <span class="overnight-notif__dot" aria-hidden="true"></span>
+              <div class="overnight-notif__body">
+                <span class="overnight-notif__time">3:47 AM</span>
+                <span class="overnight-notif__action">Lead captured</span>
+                <p class="overnight-notif__detail">James P. &middot; Boiler service
+                  &middot; Wants morning callback</p>
+              </div>
+            </div>
+
+            <div class="overnight-notif" role="listitem">
+              <span class="overnight-notif__dot" aria-hidden="true"></span>
+              <div class="overnight-notif__body">
+                <span class="overnight-notif__time">5:21 AM</span>
+                <span class="overnight-notif__action">Question answered</span>
+                <p class="overnight-notif__detail">Rachel T. &middot;
+                  &ldquo;Do you do weekends?&rdquo; &middot;
+                  Replied with availability</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- THE ZERO — emotional climax -->
+          <div class="overnight-zero" aria-label="Zero missed calls">
+            <span class="overnight-zero__number">0</span>
+            <span class="overnight-zero__label">missed calls</span>
+            <span class="overnight-zero__stats">3 answered &middot; 2 booked
+              &middot; &pound;420 estimated</span>
+          </div>
+
+          <!-- Result card -->
+          <div class="overnight-result">
+            Every night. Automatically.
+          </div>
+
+          <p class="overnight-kicker">
+            While you slept, your business grew.
+          </p>
+
+        </div>
+      </section>
+
+
+      <!-- ========== SECTION 4: THE DEAL — IMBALANCE ========== -->
+      <section id="the-deal" class="section-alt" aria-labelledby="deal-heading">
+        <div class="container">
+
+          <!-- Section label -->
+          <span class="deal-label">The Deal</span>
+
+          <!-- Headline -->
+          <h2 id="deal-heading" class="deal-headline">
+            You Give Us 45 Minutes.<br>
+            <span class="deal-headline__accent">We Give You Everything.</span>
+          </h2>
+
+          <!-- Imbalance layout: asymmetric two-column -->
+          <div class="deal-imbalance">
+
+            <!-- LEFT: Prospect's tiny contribution -->
+            <div class="deal-side deal-side--you">
+              <div class="deal-side__header">
+                <span class="deal-side__tag">Your Part</span>
+              </div>
+              <div class="deal-card deal-card--minimal">
+                <h3 class="deal-card__title">One Call. A Few Questions.</h3>
+                <p class="deal-card__body">
+                  45-minute discovery call. We ask about your business, your
+                  services, and your hours. That is it. That is your entire
+                  contribution to the process.
+                </p>
+                <span class="deal-card__effort">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none"
+                       stroke="currentColor" stroke-width="1.5"
+                       stroke-linecap="round" stroke-linejoin="round"
+                       aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                  Total effort: ~45 min
                 </span>
-                <span style="display: inline-flex; align-items: center; gap: 0.5rem; margin-right: 1.5rem;">
-                    <i data-lucide="check-circle" size="16" color="#10B981"></i> 7-day free trial
-                </span>
-                <span style="display: inline-flex; align-items: center; gap: 0.5rem;">
-                    <i data-lucide="check-circle" size="16" color="#10B981"></i> Don't love it? Full refund.
-                </span>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Omnichannel "Be Everywhere" Section -->
-    <section class="section section-light" style="padding-bottom: var(--space-xl);">
-        <div class="container text-center">
-            <div class="hero-badge"
-                style="background: rgba(249, 82, 40, 0.1); color: var(--color-primary); border: 1px solid rgba(249, 82, 40, 0.3); margin: 0 auto 1.5rem auto;">
-                One Brain. Every Channel.</div>
-            <h2 style="color: var(--color-text-main);">Don't Just Answer Calls. <br><span
-                    style="color: var(--color-primary);">Capture
-                    Every Interaction.</span></h2>
-            <p style="max-width: 600px; margin: 1rem auto; color: var(--color-text-body);">
-                Your customers are on Instagram, Facebook, and Web Chat. Fluis captures them all.
-            </p>
-
-            <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap;">
-                <div class="card-light" style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem;">
-                    <i data-lucide="instagram" color="#E1306C"></i> <span
-                        style="color: var(--color-text-main);">Instagram DMs</span>
-                </div>
-                <div class="card-light" style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem;">
-                    <i data-lucide="message-circle" color="#0078FF"></i> <span
-                        style="color: var(--color-text-main);">Messenger</span>
-                </div>
-                <div class="card-light" style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem;">
-                    <i data-lucide="message-square" color="#10B981"></i> <span
-                        style="color: var(--color-text-main);">SMS</span>
-                </div>
-                <div class="card-light" style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem;">
-                    <i data-lucide="globe" color="#6366F1"></i> <span style="color: var(--color-text-main);">Web
-                        Chat</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <!-- ROI Section (Loss Aversion Strategy) -->
-    <section class="section section-dark">
-        <div class="container text-center">
-            <h2 style="color: #fff;">The Cost of Silence</h2>
-
-            <div
-                style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; align-items: start; margin-top: var(--space-lg);">
-                <div style="padding: 1rem;">
-                    <div
-                        style="font-size: 4rem; font-family: var(--font-display); font-weight: 800; color: #EF4444; line-height: 1;">
-                        62%</div>
-                    <p style="margin-top: 1rem; font-size: 0.95rem; color: #D1D5DB;">of calls to SMBs go
-                        unanswered.</p>
-                </div>
-                <div style="padding: 1rem;">
-                    <div
-                        style="font-size: 4rem; font-family: var(--font-display); font-weight: 800; color: #EF4444; line-height: 1;">
-                        85%</div>
-                    <p style="margin-top: 1rem; font-size: 0.95rem; color: #D1D5DB;">of customers won't
-                        call back.</p>
-                </div>
-                <div style="padding: 1rem;">
-                    <div
-                        style="font-size: 4rem; font-family: var(--font-display); font-weight: 800; color: #10B981; line-height: 1;">
-                        $0</div>
-                    <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--color-text-body);">Cost to engage
-                        Fluis.ai vs. hiring
-                        staff.</p>
-                </div>
+              </div>
             </div>
 
-            <div style="margin-top: 5rem;">
-                <a href="#contact" class="btn btn-primary">Stop Losing Money Today</a>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Industries We Help -->
-    <section class="section section-light">
-        <div class="container text-center">
-            <h2 style="color: var(--color-text-main); margin-bottom: 0.75rem;">Industries We Help</h2>
-            <p style="color: var(--color-text-body); max-width: 650px; margin: 0 auto 3rem auto; font-size: 1.1rem;">
-                If your business runs on <span style="color: var(--color-primary); font-weight: 600;">calls</span>,
-                <span style="color: var(--color-primary); font-weight: 600;">clients</span>, or
-                <span style="color: var(--color-primary); font-weight: 600;">appointments</span>
-                — our AI Agents can automate it.
-            </p>
-
-            <div class="industries-grid">
-                <div class="industry-card">
-                    <div class="industry-pill"><i data-lucide="home" size="16"></i> Home Services</div>
-                    <p>Plumbing, HVAC, electrical, cleaning & more</p>
-                </div>
-                <div class="industry-card">
-                    <div class="industry-pill"><i data-lucide="building" size="16"></i> Real Estate</div>
-                    <p>Realtors, coaches, and property managers</p>
-                </div>
-                <div class="industry-card">
-                    <div class="industry-pill"><i data-lucide="users" size="16"></i> Coaches &amp; Consultants</div>
-                    <p>Private coaches &amp; business consultants</p>
-                </div>
-
-                <div class="industry-card">
-                    <div class="industry-pill"><i data-lucide="car" size="16"></i> Auto & Detailing</div>
-                    <p>Car wash, paint, delivery services</p>
-                </div>
-                <div class="industry-card">
-                    <div class="industry-pill"><i data-lucide="dog" size="16"></i> Pet Services</div>
-                    <p>Grooming, walking, animal care</p>
-                </div>
+            <!-- Divider: VS indicator -->
+            <div class="deal-divider" aria-hidden="true">
+              <span class="deal-divider__vs">vs</span>
+              <div class="deal-divider__line"></div>
             </div>
 
-            <div class="industry-card-wide" style="margin-top: 1.5rem;">
-                <div class="industry-pill"><i data-lucide="search" size="16"></i> And Many More</div>
-                <p>Any business that depends on conversations</p>
+            <!-- RIGHT: Everything Fluis delivers -->
+            <div class="deal-side deal-side--us">
+              <div class="deal-side__header">
+                <span class="deal-side__tag">Our Part</span>
+              </div>
+              <div class="deal-grid">
+                <div class="deal-tile">
+                  <div class="deal-tile__indicator" aria-hidden="true"></div>
+                  <span class="deal-tile__label">Professional Website</span>
+                  <span class="deal-tile__detail">Built. Hosted. Maintained.</span>
+                </div>
+                <div class="deal-tile">
+                  <div class="deal-tile__indicator" aria-hidden="true"></div>
+                  <span class="deal-tile__label">AI Voice Agent</span>
+                  <span class="deal-tile__detail">Answers calls 24/7.</span>
+                </div>
+                <div class="deal-tile">
+                  <div class="deal-tile__indicator" aria-hidden="true"></div>
+                  <span class="deal-tile__label">AI Chat Agent</span>
+                  <span class="deal-tile__detail">Qualifies leads on your site.</span>
+                </div>
+                <div class="deal-tile">
+                  <div class="deal-tile__indicator" aria-hidden="true"></div>
+                  <span class="deal-tile__label">CRM System</span>
+                  <span class="deal-tile__detail">Contacts, pipelines, dashboards.</span>
+                </div>
+                <div class="deal-tile">
+                  <div class="deal-tile__indicator" aria-hidden="true"></div>
+                  <span class="deal-tile__label">Booking Automations</span>
+                  <span class="deal-tile__detail">Confirmations, reminders, follow-ups.</span>
+                </div>
+                <div class="deal-tile">
+                  <div class="deal-tile__indicator" aria-hidden="true"></div>
+                  <span class="deal-tile__label">Business Training</span>
+                  <span class="deal-tile__detail">Agent learns your services and FAQs.</span>
+                </div>
+                <div class="deal-tile">
+                  <div class="deal-tile__indicator" aria-hidden="true"></div>
+                  <span class="deal-tile__label">7-Day Free Trial</span>
+                  <span class="deal-tile__detail">Full system, zero risk.</span>
+                </div>
+                <div class="deal-tile">
+                  <div class="deal-tile__indicator" aria-hidden="true"></div>
+                  <span class="deal-tile__label">Ongoing Support</span>
+                  <span class="deal-tile__detail">We monitor, optimize, improve.</span>
+                </div>
+              </div>
             </div>
 
+          </div>
+
+          <!-- Compressed timeline -->
+          <div class="deal-timeline" role="list" aria-label="Setup timeline">
+            <div class="deal-timeline__track" aria-hidden="true"></div>
+            <div class="deal-timeline__node" role="listitem">
+              <div class="deal-timeline__marker" aria-hidden="true"></div>
+              <div class="deal-timeline__content">
+                <span class="deal-timeline__day">Day 0</span>
+                <span class="deal-timeline__event">Discovery call</span>
+              </div>
+            </div>
+            <div class="deal-timeline__node" role="listitem">
+              <div class="deal-timeline__marker" aria-hidden="true"></div>
+              <div class="deal-timeline__content">
+                <span class="deal-timeline__day">Day 1–3</span>
+                <span class="deal-timeline__event">We build everything</span>
+              </div>
+            </div>
+            <div class="deal-timeline__node" role="listitem">
+              <div class="deal-timeline__marker" aria-hidden="true"></div>
+              <div class="deal-timeline__content">
+                <span class="deal-timeline__day">Day 4</span>
+                <span class="deal-timeline__event">Agent goes live</span>
+              </div>
+            </div>
+            <div class="deal-timeline__node deal-timeline__node--accent" role="listitem">
+              <div class="deal-timeline__marker" aria-hidden="true"></div>
+              <div class="deal-timeline__content">
+                <span class="deal-timeline__day">Day 11+</span>
+                <span class="deal-timeline__event">Only pay if it books</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kicker + CTA -->
+          <p class="deal-kicker">
+            The only thing harder than getting started is explaining why you waited.
+          </p>
+          <div class="deal-cta">
+            <a href="#book-call" class="btn-primary">Book Your 45 Minutes</a>
+          </div>
 
         </div>
-    </section>
+      </section>
 
-    <!-- FAQ / Objection Handling -->
-    <section class="section section-dark">
-        <div class="container" style="max-width: 800px;">
-            <div class="text-center" style="margin-bottom: var(--space-lg);">
-                <h2 style="color: #fff;">You Have Questions. We Have Answers.</h2>
+
+      <!-- Ambient Waveform Strip -->
+      <canvas class="audio-waveform-strip" aria-hidden="true" height="4"></canvas>
+
+
+      <!-- ========== SECTION 5: SERVICES OVERVIEW ========== -->
+      <section id="services">
+        <div class="container">
+          <h2 class="section-heading reveal" style="text-align: center; max-width: none;">
+            Everything You Need. One Monthly Price.
+          </h2>
+          <p class="section-body reveal" style="text-align: center; max-width: 620px; margin-left: auto; margin-right: auto;">
+            Choose the level of intelligence your business needs.
+            Every plan includes setup, hosting, and support.
+          </p>
+          <div class="services-grid">
+            <!-- Card 1: Website -->
+            <div class="service-card">
+              <div class="service-card__icon">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </div>
+              <span class="service-card__label">Website & Hosting</span>
+              <p class="service-card__description">
+                A professional website built and hosted for your business.
+                Mobile-ready, SEO-optimized, and maintained for you.
+              </p>
+              <div class="service-card__price">From $27<span class="price-period">/mo</span></div>
+              <a href="/services.html#website" class="service-card__link">Learn More</a>
             </div>
 
-            <details>
-                <summary style="color: #fff;">Does it sound like a robot?</summary>
-                <div style="color: #D1D5DB;">Not anymore. The 2026 models we use have breath pauses, filler words ("um,"
-                    "uh"), and latency
-                    under 500ms. Most callers have no idea they aren't speaking to a human.</div>
+            <!-- Card 2: Chat -->
+            <div class="service-card">
+              <div class="service-card__icon">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z"/>
+                </svg>
+              </div>
+              <span class="service-card__label">Chat Intelligence</span>
+              <p class="service-card__description">
+                An AI chat agent on your website that qualifies leads and
+                books appointments while you work. 24/7 coverage.
+              </p>
+              <div class="service-card__price">$147<span class="price-period">/mo</span></div>
+              <span class="service-card__includes">Includes free website</span>
+              <a href="/services.html#chat" class="service-card__link">Learn More</a>
+            </div>
+
+            <!-- Card 3: Voice (Recommended) -->
+            <div class="service-card service-card--recommended">
+              <span class="service-card__badge">Recommended</span>
+              <div class="service-card__icon">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="6" width="4" height="12" rx="1"/>
+                  <rect x="10" y="3" width="4" height="18" rx="1"/>
+                  <rect x="18" y="8" width="4" height="8" rx="1"/>
+                </svg>
+              </div>
+              <span class="service-card__label">Voice Intelligence</span>
+              <p class="service-card__description">
+                A voice AI agent that answers calls and website visitors.
+                Talks to your customers, qualifies them, and books the job.
+              </p>
+              <div class="service-card__price">$247<span class="price-period">/mo</span></div>
+              <span class="service-card__includes">Includes free website + CRM</span>
+              <a href="/services.html#voice" class="service-card__link">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ========== SECTION 6: RAAS GUARANTEE ========== -->
+      <section id="guarantee" class="section-alt">
+        <div class="container">
+          <div class="guarantee-callout reveal">
+            <h2 class="guarantee-headline">
+              We Earn Our Fee Every Month — Or You Don't Pay It.
+            </h2>
+            <div class="guarantee-body reveal">
+              <p>
+                Our service costs less than the value of one booked appointment.
+                If our AI books just one appointment this month, it has already
+                paid for itself. Everything after that is pure profit for you.
+              </p>
+              <p>
+                And if the agent does not book a single appointment? You do not
+                pay. Not a penny. That is our RAAS guarantee — Results as a Service.
+                We make money only when we make you money.
+              </p>
+            </div>
+            <div class="guarantee-details reveal">
+              <div class="guarantee-detail">
+                <span class="guarantee-detail__title">Trial Guarantee</span>
+                <p class="guarantee-detail__text">
+                  7-day free trial. If you do not like our service, you get a full
+                  refund — including the setup fee. No questions asked.
+                </p>
+              </div>
+              <div class="guarantee-detail">
+                <span class="guarantee-detail__title">Monthly Guarantee</span>
+                <p class="guarantee-detail__text">
+                  If our agent does not book a single appointment in any given month,
+                  you do not pay for that month. Stay or leave — your choice.
+                </p>
+              </div>
+            </div>
+            <div class="section-cta reveal" style="text-align: center; margin-top: var(--space-lg);">
+              <a href="#book-call" class="btn-primary">Start Risk-Free</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Ambient Waveform Strip -->
+      <canvas class="audio-waveform-strip" aria-hidden="true" height="4"></canvas>
+
+
+      <!-- ========== SECTION 7: INDUSTRIES ========== -->
+      <section id="industries">
+        <div class="container">
+          <h2 class="section-heading reveal" style="text-align: center; max-width: none;">
+            Built for Businesses Like Yours.
+          </h2>
+          <p class="section-body reveal" style="text-align: center; max-width: 620px; margin-left: auto; margin-right: auto;">
+            If your business runs on calls, clients, or appointments
+            — our AI agents can help.
+          </p>
+          <div class="industries-grid">
+            <div class="industry-tile">
+              <div class="industry-tile__icon">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              </div>
+              <div class="industry-tile__name">Home Services</div>
+              <div class="industry-tile__subtitle">Plumbing, HVAC, electrical, cleaning & more</div>
+              <p class="industry-pain">Missed calls while on the job = missed revenue</p>
+            </div>
+            <div class="industry-tile">
+              <div class="industry-tile__icon">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="4" y="2" width="16" height="20" rx="2"/>
+                  <line x1="4" y1="10" x2="20" y2="10"/>
+                  <line x1="12" y1="10" x2="12" y2="22"/>
+                </svg>
+              </div>
+              <div class="industry-tile__name">Real Estate</div>
+              <div class="industry-tile__subtitle">Realtors, property managers, coaches</div>
+              <p class="industry-pain">Leads expect instant responses, day or night</p>
+            </div>
+            <div class="industry-tile">
+              <div class="industry-tile__icon">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="industry-tile__name">Coaches & Consultants</div>
+              <div class="industry-tile__subtitle">Private coaches, business consultants</div>
+              <p class="industry-pain">Client calls come during sessions</p>
+            </div>
+            <div class="industry-tile">
+              <div class="industry-tile__icon">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+                  <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
+                  <path d="M5 17H3v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2"/>
+                  <line x1="9" y1="17" x2="15" y2="17"/>
+                  <path d="M14 6l4 5h-5V6"/>
+                </svg>
+              </div>
+              <div class="industry-tile__name">Auto & Detailing</div>
+              <div class="industry-tile__subtitle">Car wash, paint, detailing services</div>
+              <p class="industry-pain">Walk-in inquiries lost to voicemail</p>
+            </div>
+            <div class="industry-tile">
+              <div class="industry-tile__icon">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 10c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2s2 .9 2 2v4c0 1.1-.9 2-2 2z"/>
+                  <path d="M18 14.5c0 2.5-2.7 4.5-6 4.5s-6-2-6-4.5"/>
+                  <path d="M5 14.5c0-.4.1-.8.3-1.1"/>
+                  <path d="M18.7 13.4c.2.3.3.7.3 1.1"/>
+                  <line x1="12" y1="19" x2="12" y2="22"/>
+                </svg>
+              </div>
+              <div class="industry-tile__name">Pet Services</div>
+              <div class="industry-tile__subtitle">Grooming, walking, animal care</div>
+              <p class="industry-pain">Hands full of dogs, not phones</p>
+            </div>
+            <div class="industry-tile industry-tile--cta">
+              <div class="industry-tile__icon">
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"/>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+              </div>
+              <div class="industry-tile__name">And Many More</div>
+              <div class="industry-tile__subtitle">Any business that depends on conversations</div>
+              <p class="industry-pain">
+                <a href="#" class="industry-cta-link" data-action="trigger-voice-bubble">
+                  Don't see your industry? Let's talk &rarr;
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ========== SECTION 8: FAQ ACCORDION ========== -->
+      <section id="faq" class="section-alt" aria-labelledby="faq-heading">
+        <div class="container">
+          <h2 id="faq-heading" class="section-heading reveal" style="text-align: center; max-width: none;">
+            You Have Questions. We Have Answers.
+          </h2>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>Does it sound like a robot?</summary>
+              <div class="faq-item__answer">
+                <p>
+                  Not anymore. The 2026 voice models we use have natural breath pauses,
+                  filler words, and response times under half a second. Most callers
+                  genuinely cannot tell they are speaking to AI. And the technology is
+                  improving every month — by this time next year, even experts will
+                  struggle to tell the difference.
+                </p>
+              </div>
             </details>
-            <details>
-                <summary style="color: #fff;">Can I take over the call?</summary>
-                <div style="color: #D1D5DB;">Yes. You get immediate notifications. You can jump into live chats or view
-                    call logs instantly.
-                    It's your business; Fluis is just your front desk.</div>
+            <details class="faq-item">
+              <summary>Can I take over a conversation?</summary>
+              <div class="faq-item__answer">
+                <p>
+                  Yes. You get notified every time your agent starts a conversation.
+                  You can jump into any live chat or view any call log at any time.
+                  Think of the AI as your front desk — it handles the initial
+                  conversation, but you are always in control.
+                </p>
+              </div>
             </details>
-            <details>
-                <summary style="color: #fff;">Do I need to change my phone number?</summary>
-                <div style="color: #D1D5DB;">No. You simply set up call forwarding. When you can't pick up (or after
-                    hours), the call routes to
-                    Fluis. Seamless.</div>
+            <details class="faq-item">
+              <summary>Do I need to change my phone number?</summary>
+              <div class="faq-item__answer">
+                <p>
+                  No. You keep your existing number. We simply set up call forwarding
+                  so that when you cannot pick up — or after business hours — the call
+                  routes to your AI agent. Your customers dial the same number they
+                  always have.
+                </p>
+              </div>
             </details>
-            <details>
-                <summary style="color: #fff;">Is there a contract?</summary>
-                <div style="color: #D1D5DB;">Never. We earn your business every month. If we don't make you money, fire
-                    us.</div>
+            <details class="faq-item">
+              <summary>Is there a contract?</summary>
+              <div class="faq-item__answer">
+                <p>
+                  Never. We earn your business every single month. If we stop delivering
+                  results, you leave. No cancellation fees, no lock-in, no awkward phone
+                  calls. Month-to-month. Cancel anytime.
+                </p>
+              </div>
             </details>
+            <details class="faq-item">
+              <summary>What if the agent does not book any appointments?</summary>
+              <div class="faq-item__answer">
+                <p>
+                  You do not pay. Our entire model is built on Results as a Service.
+                  If your AI agent does not book even a single appointment in a given
+                  month, we do not charge you for that month. You can stay and let us
+                  improve it, or you can walk away with a full refund. No risk, no catch.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What is included in the setup?</summary>
+              <div class="faq-item__answer">
+                <p>
+                  Everything. We build your website, set up your CRM, configure all
+                  automations (booking confirmations, follow-ups, notifications), deploy
+                  your AI agent, and train it on your business. You tell us about your
+                  services, your hours, and your availability. We do the rest. That is
+                  what Done For You means.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>How long does setup take?</summary>
+              <div class="faq-item__answer">
+                <p>
+                  3 days for onboarding, then your agent goes live with a 7-day free
+                  trial. So from the moment you say yes to having a fully working AI
+                  agent is about 10 days. Most businesses are surprised by how fast it is.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>What if I already have a website?</summary>
+              <div class="faq-item__answer">
+                <p>
+                  No problem. We can embed our AI agents directly on your existing
+                  website. Same pricing, same features, same CRM integration. Your
+                  data flows to the same place regardless of where the agent lives.
+                  If you want, we can also build you a new website as part of the
+                  package — it is included at no extra cost with our agent plans.
+                </p>
+              </div>
+            </details>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem;">
-                <div>
-                    <a href="index.html" class="logo"
-                        style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; margin-bottom: 1.5rem;">
-                        <div
-                            style="width: 32px; height: 32px; background: var(--color-primary); border-radius: 8px; display: grid; place-items: center;">
-                            <i data-lucide="zap" color="white" size="20"></i>
-                        </div>
-                        <span
-                            style="font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; color: var(--color-text-main);">Fluis.ai</span>
-                    </a>
-                    <p>The operating system for modern home service businesses. Built by contractors, for contractors.
-                    </p>
-                    <div style="margin-top: 2rem; display: flex; gap: 1rem;">
-                        <!-- Socials would go here -->
-                        <i data-lucide="twitter" size="20" color="#64748B"></i>
-                        <i data-lucide="linkedin" size="20" color="#64748B"></i>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Platform</h4>
-                    <ul>
-                        <li><a href="services.html">Features</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="#">Integrations</a></li>
-                        <li><a href="#">Status</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="terms.html">Terms</a></li>
-                        <li><a href="privacy.html">Privacy</a></li>
-                        <li><a href="mailto:hello@fluis.ai">Contact</a></li>
-                    </ul>
-                </div>
+
+      <!-- ========== SECTION 9: FINAL CTA ========== -->
+      <section id="final-cta" class="final-cta" aria-labelledby="final-cta-heading">
+        <div class="container">
+          <div class="final-cta__inner">
+            <div class="final-cta__line" aria-hidden="true"></div>
+            <h2 id="final-cta-heading" class="final-cta__heading">
+              Ready when you are.
+            </h2>
+            <div class="final-cta__actions">
+              <a href="#book-call" class="final-cta__btn">Book a Free Demo</a>
+              <a href="#" class="final-cta__secondary" data-action="trigger-voice-bubble">
+                <svg class="final-cta__mic" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="2" width="6" height="11" rx="3"/>
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                </svg>
+                Or talk to our agent now
+              </a>
             </div>
-            <div style="margin-top: 4rem; text-align: center; color: var(--color-text-mute); font-size: 0.9rem;">
-                &copy; 2026 Fluis.ai. All rights reserved.
-            </div>
+          </div>
         </div>
-    </footer>
+      </section>
 
-    <script>
-        lucide.createIcons();
-    </script>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo footer-logo" aria-label="Fluis.ai — Home">
+            Fluis<span class="logo-dot">.</span>ai
+          </a>
+          <p class="footer-tagline">We help businesses implement AI. Simply.</p>
+          <a href="mailto:hello@fluis.ai" class="footer-email">hello@fluis.ai</a>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Company</h3>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Services</h3>
+          <ul class="footer-links">
+            <li><a href="/services.html#website">Website & Hosting</a></li>
+            <li><a href="/services.html#chat">Chat Agent</a></li>
+            <li><a href="/services.html#voice">Voice Agent</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-trust">
+        <span class="trust-badge">Done for you</span>
+        <span class="trust-divider" aria-hidden="true"></span>
+        <span class="trust-badge">7-day free trial</span>
+        <span class="trust-divider" aria-hidden="true"></span>
+        <span class="trust-badge">No results? No charge</span>
+        <span class="trust-divider" aria-hidden="true"></span>
+        <span class="trust-badge">Setup fee refundable</span>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Fluis.ai</p>
+        <div class="footer-legal">
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div id="book-call" class="booking-modal" role="dialog" aria-modal="true" aria-label="Book a free demo">
+    <div class="booking-modal__backdrop"></div>
+    <div class="booking-modal__content">
+      <button class="booking-modal__close" aria-label="Close booking form">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+      <h2 class="booking-modal__title">Book Your Free Discovery Call</h2>
+      <p class="booking-modal__subtitle">45 minutes. No pressure. No pitch. Just a conversation about your business.</p>
+      <div class="booking-modal__calendar" style="background: var(--color-surface-2); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; min-height: 400px;">
+        <p style="color: var(--color-text-dim); font-size: var(--text-sm);">GHL Calendar Embed — Placeholder</p>
+      </div>
+      <div class="booking-modal__fallback">
+        <p>Having trouble? Email us at <a href="mailto:hello@fluis.ai">hello@fluis.ai</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="mobile-sticky-cta" aria-hidden="true">
+    <div class="container">
+      <a href="#book-call" class="btn-primary mobile-sticky-btn">Book a Free Demo</a>
+    </div>
+  </div>
+
+  <!-- Theme Toggle -->
+  <button
+    class="theme-toggle"
+    role="switch"
+    aria-checked="true"
+    aria-label="Switch to light mode"
+  >
+    <!-- Sun icon (shown in dark mode = "click to go light") -->
+    <div class="theme-icon theme-icon--sun">
+      <svg class="sun-svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle class="sun-core" cx="12" cy="12" r="5" fill="currentColor"/>
+        <g class="sun-rays">
+          <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+    <!-- Moon icon (shown in light mode = "click to go dark") -->
+    <div class="theme-icon theme-icon--moon">
+      <svg class="moon-svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path class="moon-body" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"/>
+        <circle class="moon-star moon-star--1" cx="18" cy="5" r="1" fill="currentColor"/>
+        <circle class="moon-star moon-star--2" cx="22" cy="9" r="0.6" fill="currentColor"/>
+        <circle class="moon-star moon-star--3" cx="16" cy="2" r="0.5" fill="currentColor"/>
+      </svg>
+    </div>
+  </button>
+
+  <!-- Voice Bubble Placeholder -->
+  <div class="voice-bubble-placeholder" aria-label="Talk to our AI agent">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+      <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+      <line x1="12" y1="19" x2="12" y2="23"/>
+      <line x1="8" y1="23" x2="16" y2="23"/>
+    </svg>
+  </div>
+
+  <!-- GSAP + Plugins (CDN) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/SplitText.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrambleTextPlugin.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/Flip.min.js"></script>
+
+  <!-- Smooth scroll + Page transitions -->
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@latest"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@barba/core@latest"></script>
+
+  <!-- Site scripts -->
+  <script defer src="/js/main.js"></script>
+  <script defer src="/js/animations/cursor.js"></script>
+  <script defer src="/js/animations/nav.js"></script>
+  <script defer src="/js/animations/reveal.js"></script>
+  <script defer src="/js/animations/theme.js"></script>
+  <script defer src="/js/animations/transitions.js"></script>
+  <script defer src="/js/animations/modal.js"></script>
+  <script defer src="/js/animations/sticky-cta.js"></script>
+  <script defer src="/js/animations/home.js"></script>
+  <script defer src="/js/animations/audio.js"></script>
+  <script defer src="/js/animations/preloader.js"></script>
+
 </body>
-
 </html>
